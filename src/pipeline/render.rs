@@ -639,7 +639,7 @@ impl RenderPipelineDescriptorRef {
         unsafe { msg_send![self, fragmentBuffers] }
     }
 
-    // TODO: tesselation stuff
+    // TODO: tessellation stuff
 
     /// API_AVAILABLE(macos(11.0), ios(14.0));
     /// Marshal to Rust Vec

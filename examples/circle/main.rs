@@ -138,7 +138,7 @@ fn main() {
                                 event_loop.exit();
                             }
                             WindowEvent::RedrawRequested => {
-                                // It's preferrable to render in this event rather than in MainEventsCleared, since
+                                // It's preferable to render in this event rather than in MainEventsCleared, since
                                 // rendering in here allows the program to gracefully handle redraws requested
                                 // by the OS.
                                 let drawable = match layer.next_drawable() {

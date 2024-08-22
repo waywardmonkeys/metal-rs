@@ -25,7 +25,7 @@ capture_scope.end_scope();
 
 # Debugging in Xcode
 
-If you only want to enable Metal validation without using Xcode, use the `METAL_DEVICE_WRAPPER_TYPE=1` environment variable when lauching your program. For example, to run the `window` example with Metal validation, use the command `METAL_DEVICE_WRAPPER_TYPE=1 cargo run --example window`.
+If you only want to enable Metal validation without using Xcode, use the `METAL_DEVICE_WRAPPER_TYPE=1` environment variable when launching your program. For example, to run the `window` example with Metal validation, use the command `METAL_DEVICE_WRAPPER_TYPE=1 cargo run --example window`.
 
 Let's walk through an example of debugging the [`texture` example](/examples/texture).
 
@@ -68,11 +68,11 @@ From here you'll be able to use XCode's Metal debugging tools on your running ap
 
 ---
 
-See [Developing and debugging shaders](https://developer.apple.com/documentation/metal/shader_authoring/developing_and_debugging_metal_shaders) for more infromation on
+See [Developing and debugging shaders](https://developer.apple.com/documentation/metal/shader_authoring/developing_and_debugging_metal_shaders) for more information on
 debugging Metal applications in XCode.
 
 # Capture GPU Command Data to a File
 
-You can also [capture GPU command data programatically](https://developer.apple.com/documentation/metal/frame_capture_debugging_tools/capturing_gpu_command_data_programmatically). 
+You can also [capture GPU command data programmatically](https://developer.apple.com/documentation/metal/frame_capture_debugging_tools/capturing_gpu_command_data_programmatically).
 
 Note that Xcode has a closed source approach to how it sets the `GT_HOST_URL_MTL` environment variable that is required for captures, so you must run your application within Xcode in order to use the frame capture debugging tools.

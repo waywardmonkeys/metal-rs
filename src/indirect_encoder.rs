@@ -205,9 +205,9 @@ impl IndirectRenderCommandRef {
         patch_index_buffer_offset: NSUInteger,
         instance_count: NSUInteger,
         base_instance: NSUInteger,
-        tesselation_factor_buffer: &BufferRef,
-        tesselation_factor_buffer_offset: NSUInteger,
-        tesselation_factor_buffer_instance_stride: NSUInteger,
+        tessellation_factor_buffer: &BufferRef,
+        tessellation_factor_buffer_offset: NSUInteger,
+        tessellation_factor_buffer_instance_stride: NSUInteger,
     ) {
         unsafe {
             msg_send![self,
@@ -218,9 +218,9 @@ impl IndirectRenderCommandRef {
                 patchIndexBufferOffset: patch_index_buffer_offset
                 instanceCount: instance_count
                 baseInstance: base_instance
-                tessellationFactorBuffer: tesselation_factor_buffer
-                tessellationFactorBufferOffset: tesselation_factor_buffer_offset
-                tessellationFactorBufferInstanceStride: tesselation_factor_buffer_instance_stride
+                tessellationFactorBuffer: tessellation_factor_buffer
+                tessellationFactorBufferOffset: tessellation_factor_buffer_offset
+                tessellationFactorBufferInstanceStride: tessellation_factor_buffer_instance_stride
             ]
         }
     }
@@ -236,9 +236,9 @@ impl IndirectRenderCommandRef {
         control_point_index_buffer_offset: NSUInteger,
         instance_count: NSUInteger,
         base_instance: NSUInteger,
-        tesselation_factor_buffer: &BufferRef,
-        tesselation_factor_buffer_offset: NSUInteger,
-        tesselation_factor_buffer_instance_stride: NSUInteger,
+        tessellation_factor_buffer: &BufferRef,
+        tessellation_factor_buffer_offset: NSUInteger,
+        tessellation_factor_buffer_instance_stride: NSUInteger,
     ) {
         unsafe {
             msg_send![self,
@@ -251,9 +251,9 @@ impl IndirectRenderCommandRef {
                 controlPointIndexBufferOffset: control_point_index_buffer_offset
                 instanceCount: instance_count
                 baseInstance: base_instance
-                tessellationFactorBuffer: tesselation_factor_buffer
-                tessellationFactorBufferOffset: tesselation_factor_buffer_offset
-                tessellationFactorBufferInstanceStride: tesselation_factor_buffer_instance_stride
+                tessellationFactorBuffer: tessellation_factor_buffer
+                tessellationFactorBufferOffset: tessellation_factor_buffer_offset
+                tessellationFactorBufferInstanceStride: tessellation_factor_buffer_instance_stride
             ]
         }
     }

@@ -177,7 +177,7 @@ fn get_window_layer(window: &Window, device: &Device) -> MetalLayer {
 
     layer.set_device(device);
     layer.set_pixel_format(PIXEL_FORMAT);
-    // Presenting with transactions isn't necessary since we aren't synchonizing with other UIKit
+    // Presenting with transactions isn't necessary since we aren't synchronizing with other UIKit
     // draw calls.
     // https://developer.apple.com/documentation/quartzcore/cametallayer/1478157-presentswithtransaction
     layer.set_presents_with_transaction(false);
